@@ -27,13 +27,13 @@ jobs:
         run: ./gradlew clean build
         shell: bash # (7).build 시작
 
-#      - name: Get current time
-#        uses: 1466587594/get-current-time@v2
-#        id: current-time
-#        with:
-#          format: YYYY-MM-DDTHH-mm-ss
-#          utcOffset: "+09:00"작 # (8).build 시점의 시간확보
-#
-#      - name: Show Current Time
-#        run: echo "CurrentTime=$"
-#        shell: bash # (9).확보한 시간 보여주기
+      - name: Get current time
+        uses: 1466587594/get-current-time@v2
+        id: current-time
+        with:
+          format: YYYY-MM-DDTHH-mm-ss
+          utcOffset: "+09:00"작 # (8).build 시점의 시간확보
+
+      - name: Show Current Time
+        run: echo "CurrentTime=$"
+        shell: bash # (9).확보한 시간 보여주기
